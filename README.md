@@ -23,13 +23,13 @@ Actual captures of the redesigned app running on Windows in dark mode.
 
 Deployment totals, recent deployments, and the details pane displayed side by side.
 
-![Wide deployment dashboard with status totals, recent deployments, and deployment details](docs/screenshots/deployments-wide.png)
+![Wide deployment dashboard with status totals, recent deployments, and deployment details](docs/screenshots/dashboard-overview.png)
 
 ### Deployment logs
 
 Select a deployment to inspect its build events and access preview, production, Vercel, and copy-log actions.
 
-![Selected deployment with build events and deployment actions](docs/screenshots/deployment-logs.png)
+![Selected deployment with build events and deployment actions](docs/screenshots/dashboard-build-logs.png)
 
 ### Settings
 
