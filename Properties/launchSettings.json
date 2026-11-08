@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Vercel Deployment Monitor (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Vercel Deployment Monitor (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
