@@ -27,9 +27,9 @@ Deployment totals, recent deployments, and the details pane displayed side by si
 
 ### Stacked dashboard
 
-The same dashboard in a smaller window, with deployment details below the deployment list. Shorter windows leave less vertical space for each pane.
+The same dashboard in a smaller window, with deployment details below the deployment list. The page scrolls vertically, keeping both panes at a usable height; the deployment list and logs also scroll independently. This capture is scrolled to the expanded log pane, with the deployment list above it.
 
-![Windowed deployment dashboard with the deployment list and details stacked vertically](docs/screenshots/deployments-stacked.png)
+![Scrollable stacked dashboard showing the expanded log pane below the deployment list](docs/screenshots/deployments-stacked.png)
 
 ### Settings
 
