@@ -1,51 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -69,5 +69,194 @@
   </data>
   <data name="NotificationActivatorDisplayName" xml:space="preserve">
     <value>Vercel Deployment Monitor</value>
+  </data>
+  <data name="DeployTextBlock33.Text" xml:space="preserve">
+    <value>Deployments</value>
+  </data>
+  <data name="DeployTextBlock34.Text" xml:space="preserve">
+    <value>Follow every build. Know when it ships.</value>
+  </data>
+  <data name="DeployStatusInfoBar.Title" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="DeployStatusInfoBar.Message" xml:space="preserve">
+    <value>Add your Vercel API token in Settings, then refresh or start monitoring.</value>
+  </data>
+  <data name="DeployTextBlock45.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="DeployTextBlock49.Text" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="DeployTextBlock53.Text" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="DeployTextBlock57.Text" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="DeployStartButton.Content" xml:space="preserve">
+    <value>Start monitor</value>
+  </data>
+  <data name="DeployStartButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Start monitor</value>
+  </data>
+  <data name="DeployStopButton.Content" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="DeployStopButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="DeployRefreshButton.Content" xml:space="preserve">
+    <value>Refresh now</value>
+  </data>
+  <data name="DeployRefreshButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Refresh now</value>
+  </data>
+  <data name="DeployHyperlinkButton72.Content" xml:space="preserve">
+    <value>Vercel dashboard</value>
+  </data>
+  <data name="DeployHyperlinkButton72.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Vercel dashboard</value>
+  </data>
+  <data name="DeployTextBlock85.Text" xml:space="preserve">
+    <value>Recent deployments</value>
+  </data>
+  <data name="DeployDeploymentsList.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Recent deployments</value>
+  </data>
+  <data name="DeployTextBlock110.Text" xml:space="preserve">
+    <value>Deployment details</value>
+  </data>
+  <data name="DeploySelectedDeploymentText.Text" xml:space="preserve">
+    <value>Select a deployment to load build + deployment events.</value>
+  </data>
+  <data name="DeployOpenDeploymentButton.Label" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="DeployOpenDeploymentButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="DeployOpenProductionButton.Label" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="DeployOpenProductionButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="DeployOpenDashboardButton.Label" xml:space="preserve">
+    <value>Vercel</value>
+  </data>
+  <data name="DeployOpenDashboardButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Vercel</value>
+  </data>
+  <data name="DeployCopyLogsButton.Label" xml:space="preserve">
+    <value>Copy logs</value>
+  </data>
+  <data name="DeployCopyLogsButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Copy logs</value>
+  </data>
+  <data name="DeployLogsTextBox.PlaceholderText" xml:space="preserve">
+    <value>Deployment events appear here.</value>
+  </data>
+  <data name="DeployLogsTextBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Deployment logs</value>
+  </data>
+  <data name="SettingsTextBlock5.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsTextBlock6.Text" xml:space="preserve">
+    <value>Connect your account and choose what to watch.</value>
+  </data>
+  <data name="SettingsInfoBar7.Title" xml:space="preserve">
+    <value>Stay in the loop</value>
+  </data>
+  <data name="SettingsInfoBar7.Message" xml:space="preserve">
+    <value>Start monitoring from Deployments to receive Windows notifications when builds finish.</value>
+  </data>
+  <data name="SettingsTextBlock10.Text" xml:space="preserve">
+    <value>Vercel API</value>
+  </data>
+  <data name="SettingsTokenBox.Header" xml:space="preserve">
+    <value>Vercel API token</value>
+  </data>
+  <data name="SettingsTokenBox.PlaceholderText" xml:space="preserve">
+    <value>Paste token from Vercel Account Settings &gt; Tokens</value>
+  </data>
+  <data name="SettingsTokenBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Vercel API token</value>
+  </data>
+  <data name="SettingsTeamIdBox.Header" xml:space="preserve">
+    <value>Team ID (optional)</value>
+  </data>
+  <data name="SettingsTeamIdBox.PlaceholderText" xml:space="preserve">
+    <value>team_...</value>
+  </data>
+  <data name="SettingsTeamIdBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Team ID (optional)</value>
+  </data>
+  <data name="SettingsTeamSlugBox.Header" xml:space="preserve">
+    <value>Team slug (optional)</value>
+  </data>
+  <data name="SettingsTeamSlugBox.PlaceholderText" xml:space="preserve">
+    <value>your-team-slug</value>
+  </data>
+  <data name="SettingsTeamSlugBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Team slug (optional)</value>
+  </data>
+  <data name="SettingsProjectFilterBox.Header" xml:space="preserve">
+    <value>Project filter (optional)</value>
+  </data>
+  <data name="SettingsProjectFilterBox.PlaceholderText" xml:space="preserve">
+    <value>Project ID or name; leave empty to watch all projects</value>
+  </data>
+  <data name="SettingsProjectFilterBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Project filter (optional)</value>
+  </data>
+  <data name="SettingsPollIntervalBox.Header" xml:space="preserve">
+    <value>Poll interval in seconds</value>
+  </data>
+  <data name="SettingsPollIntervalBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Poll interval in seconds</value>
+  </data>
+  <data name="SettingsTextBlock20.Text" xml:space="preserve">
+    <value>The token is stored in Windows Credential Locker. Non-secret settings stay under your Windows user profile.</value>
+  </data>
+  <data name="SettingsSettingsPathBox.Header" xml:space="preserve">
+    <value>Settings file</value>
+  </data>
+  <data name="SettingsSettingsPathBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Settings file</value>
+  </data>
+  <data name="SettingsAppBarButton23.Label" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="SettingsAppBarButton23.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="SettingsAppBarButton24.Label" xml:space="preserve">
+    <value>Test connection</value>
+  </data>
+  <data name="SettingsAppBarButton24.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Test connection</value>
+  </data>
+  <data name="SettingsAppBarButton25.Label" xml:space="preserve">
+    <value>Load projects</value>
+  </data>
+  <data name="SettingsAppBarButton25.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Load projects</value>
+  </data>
+  <data name="SettingsTextBlock33.Text" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="SettingsTextBlock34.Text" xml:space="preserve">
+    <value>Load projects after entering a token. Select a row to copy its project id into the filter above.</value>
+  </data>
+  <data name="SettingsProjectsList.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="ShellNavigationViewItem12.Content" xml:space="preserve">
+    <value>Deployments</value>
+  </data>
+  <data name="ShellNavigationViewItem12.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Deployments</value>
   </data>
 </root>
