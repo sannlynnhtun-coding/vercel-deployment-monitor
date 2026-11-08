@@ -31,6 +31,12 @@ The same dashboard in a smaller window, with deployment details below the deploy
 
 ![Windowed deployment dashboard with the deployment list and details stacked vertically](docs/screenshots/deployments-stacked.png)
 
+### Settings
+
+Configure the Vercel connection, optional team and project filters, and polling interval. The API token remains masked.
+
+![Settings screen showing the masked API token, team scope, project filter, polling interval, and connection actions](docs/screenshots/settings.png)
+
 ## Requirements
 
 - Windows. The project declares Windows 10 build 17763 as its minimum target.
