@@ -25,11 +25,11 @@ Deployment totals, recent deployments, and the details pane displayed side by si
 
 ![Wide deployment dashboard with status totals, recent deployments, and deployment details](docs/screenshots/deployments-wide.png)
 
-### Stacked dashboard
+### Deployment logs
 
-The same dashboard in a smaller window, with deployment details below the deployment list. The page scrolls vertically, keeping both panes at a usable height; the deployment list and logs also scroll independently. This capture is scrolled to the expanded log pane, with the deployment list above it.
+Select a deployment to inspect its build events and access preview, production, Vercel, and copy-log actions.
 
-![Scrollable stacked dashboard showing the expanded log pane below the deployment list](docs/screenshots/deployments-stacked.png)
+![Selected deployment with build events and deployment actions](docs/screenshots/deployment-logs.png)
 
 ### Settings
 
