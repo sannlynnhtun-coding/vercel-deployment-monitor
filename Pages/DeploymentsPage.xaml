@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Page xmlns:models="using:VercelDeploymentMonitor.Models" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="VercelDeploymentMonitor.Pages.DeploymentsPage" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
-    <Grid Padding="28,24,28,24" RowSpacing="20" x:Name="PageLayout">
+    <ScrollViewer x:Name="PageScroll" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled" VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Disabled">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState x:Name="Narrow">
@@ -10,6 +10,9 @@
                     <VisualState.Setters>
                         <Setter Target="ListColumn.Width" Value="*" />
                         <Setter Target="LogsColumn.Width" Value="0" />
+                        <Setter Target="PageScroll.VerticalScrollMode" Value="Enabled" />
+                        <Setter Target="PageScroll.VerticalScrollBarVisibility" Value="Auto" />
+                        <Setter Target="Workspace.Height" Value="840" />
                         <Setter Target="LogsRow.Height" Value="*" />
                         <Setter Target="LogsPanel.(Grid.Row)" Value="1" />
                         <Setter Target="LogsPanel.(Grid.Column)" Value="0" />
@@ -22,6 +25,9 @@
                     <VisualState.Setters>
                         <Setter Target="ListColumn.Width" Value="*" />
                         <Setter Target="LogsColumn.Width" Value="*" />
+                        <Setter Target="PageScroll.VerticalScrollMode" Value="Disabled" />
+                        <Setter Target="PageScroll.VerticalScrollBarVisibility" Value="Disabled" />
+                        <Setter Target="Workspace.Height" Value="Auto" />
                         <Setter Target="LogsRow.Height" Value="0" />
                         <Setter Target="LogsPanel.(Grid.Row)" Value="0" />
                         <Setter Target="LogsPanel.(Grid.Column)" Value="1" />
@@ -29,6 +35,7 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
+    <Grid Padding="28,24,28,24" RowSpacing="20" x:Name="PageLayout">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -164,5 +171,6 @@
             </Border>
         </Grid>
     </Grid>
+    </ScrollViewer>
 </Page>
 
