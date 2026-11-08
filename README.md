@@ -15,6 +15,22 @@ Use the app to watch deployments across your accessible Vercel projects or focus
 
 The app observes deployments. It does not create, cancel, or redeploy them.
 
+## Screenshots
+
+Actual captures of the redesigned app running on Windows in dark mode.
+
+### Wide dashboard
+
+Deployment totals, recent deployments, and the details pane displayed side by side.
+
+![Wide deployment dashboard with status totals, recent deployments, and deployment details](docs/screenshots/deployments-wide.png)
+
+### Stacked dashboard
+
+The same dashboard in a smaller window, with deployment details below the deployment list. Shorter windows leave less vertical space for each pane.
+
+![Windowed deployment dashboard with the deployment list and details stacked vertically](docs/screenshots/deployments-stacked.png)
+
 ## Requirements
 
 - Windows. The project declares Windows 10 build 17763 as its minimum target.
