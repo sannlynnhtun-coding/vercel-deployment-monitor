@@ -2,6 +2,12 @@
 
 A Windows desktop app that keeps recent Vercel deployments, build logs, and completion notifications in one place. Built with C# and WinUI 3 on the Windows App SDK.
 
+## Version 1.0
+
+Version 1.0 introduces a more compact dashboard and grouped connection and monitoring settings. On smaller windows, the dashboard scrolls while keeping the deployment list and logs at usable heights; settings actions stack vertically.
+
+Windows package version: `1.0.0.0`. Application version: `1.0.0`.
+
 ## Overview
 
 Use the app to watch deployments across your accessible Vercel projects or focus on a single project. The dashboard shows deployment status, branch, creator, environment, and timestamps, with build events available for the selected deployment.
