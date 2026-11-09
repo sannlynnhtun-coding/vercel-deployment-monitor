@@ -8,6 +8,12 @@ Version 1.0 introduces a more compact dashboard and grouped connection and monit
 
 Windows package version: `1.0.0.0`. Application version: `1.0.0`.
 
+## Install on Windows x64
+
+Download the **self-signed x64 MSIX**, public `.cer` certificate, and checksums from the [version 1.0 release](https://github.com/sannlynnhtun-coding/vercel-deployment-monitor/releases/tag/v1.0.0). Follow the [trust and installation instructions](docs/INSTALL.md) to verify the certificate, import it into Local Machine Trusted People, and install the app.
+
+The publisher certificate is self-signed: Windows does not trust it automatically. Only import it if you trust this project's publisher. The private signing key is never distributed.
+
 ## Overview
 
 Use the app to watch deployments across your accessible Vercel projects or focus on a single project. The dashboard shows deployment status, branch, creator, environment, and timestamps, with build events available for the selected deployment.

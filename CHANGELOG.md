@@ -9,4 +9,4 @@
 - Made Save settings the primary action and stacked settings actions in narrow windows.
 - Preserved existing deployment, notification, credential storage, and API workflows.
 
-The initial release is a review draft. Its x64 MSIX asset is unsigned and must be signed with a trusted certificate before normal distribution.
+The x64 MSIX is now self-signed and timestamped. The release includes the public certificate and trust/install instructions. Users must explicitly trust this certificate before installation; it is not a publicly trusted publisher certificate.
