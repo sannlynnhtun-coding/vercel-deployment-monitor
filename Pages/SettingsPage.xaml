@@ -1,13 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Page xmlns:models="using:VercelDeploymentMonitor.Models" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="VercelDeploymentMonitor.Pages.SettingsPage" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
-    <Grid Padding="28,24,28,24">
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="VercelDeploymentMonitor.Pages.SettingsPage" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:models="using:VercelDeploymentMonitor.Models">
+    <Grid Padding="24,20,24,20">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers><AdaptiveTrigger MinWindowWidth="0" /></VisualState.StateTriggers>
+                    <VisualState.Setters><Setter Target="SettingsActions.Orientation" Value="Vertical" /></VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers><AdaptiveTrigger MinWindowWidth="700" /></VisualState.StateTriggers>
+                    <VisualState.Setters><Setter Target="SettingsActions.Orientation" Value="Horizontal" /></VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel MaxWidth="840" Spacing="24" HorizontalAlignment="Stretch">
+            <StackPanel MaxWidth="880" Spacing="20" HorizontalAlignment="Stretch">
                 <StackPanel Spacing="4">
-                    <TextBlock FontSize="32" FontWeight="SemiBold" AutomationProperties.HeadingLevel="Level1" TextWrapping="Wrap" x:Uid="SettingsTextBlock5" />
+                    <TextBlock FontSize="28" FontWeight="SemiBold" AutomationProperties.HeadingLevel="Level1" TextWrapping="Wrap" x:Uid="SettingsTextBlock5" />
                     <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" x:Uid="SettingsTextBlock6" />
                 </StackPanel>
-                <InfoBar IsOpen="True" IsClosable="False" Severity="Informational" x:Uid="SettingsInfoBar7" />
                 <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" CornerRadius="12" Padding="24">
                     <StackPanel Spacing="14">
                         <TextBlock FontSize="18" FontWeight="SemiBold" TextWrapping="Wrap" x:Uid="SettingsTextBlock10" />
@@ -20,17 +31,20 @@
                             <TextBox x:Name="TeamIdBox" x:Uid="SettingsTeamIdBox" AutomationProperties.AutomationId="SettingsTeamIdBox" />
                             <TextBox x:Name="TeamSlugBox" Grid.Column="1" x:Uid="SettingsTeamSlugBox" AutomationProperties.AutomationId="SettingsTeamSlugBox" />
                         </Grid>
-                        <TextBox x:Name="ProjectFilterBox" x:Uid="SettingsProjectFilterBox" AutomationProperties.AutomationId="SettingsProjectFilterBox" />
-                        <NumberBox x:Name="PollIntervalBox" Minimum="10" Maximum="600" SmallChange="5" LargeChange="30" SpinButtonPlacementMode="Inline" x:Uid="SettingsPollIntervalBox" AutomationProperties.AutomationId="SettingsPollIntervalBox" />
-                        <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" x:Uid="SettingsTextBlock20" />
-                        <TextBox x:Name="SettingsPathBox" IsReadOnly="True" x:Uid="SettingsSettingsPathBox" AutomationProperties.AutomationId="SettingsSettingsPathBox" />
-                        <CommandBar DefaultLabelPosition="Right" HorizontalAlignment="Stretch" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
-                            <AppBarButton Click="SaveSettings_Click" Icon="Save" x:Uid="SettingsAppBarButton23" AutomationProperties.AutomationId="SettingsAppBarButton23" />
-                            <AppBarButton Click="TestConnection_Click" Icon="Accept" x:Uid="SettingsAppBarButton24" AutomationProperties.AutomationId="SettingsAppBarButton24" />
-                            <AppBarButton Click="LoadProjects_Click" Icon="Refresh" x:Uid="SettingsAppBarButton25" AutomationProperties.AutomationId="SettingsAppBarButton25" />
-                        </CommandBar>
                     </StackPanel>
                 </Border>
+                <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" CornerRadius="12" Padding="24">
+                    <StackPanel Spacing="14">
+                        <TextBlock x:Uid="MonitoringHeading" FontSize="18" FontWeight="SemiBold" AutomationProperties.HeadingLevel="Level2" />
+                        <TextBox x:Name="ProjectFilterBox" x:Uid="SettingsProjectFilterBox" AutomationProperties.AutomationId="SettingsProjectFilterBox" />
+                        <NumberBox x:Name="PollIntervalBox" Minimum="10" Maximum="600" SmallChange="5" LargeChange="30" SpinButtonPlacementMode="Inline" x:Uid="SettingsPollIntervalBox" AutomationProperties.AutomationId="SettingsPollIntervalBox" />
+                    </StackPanel>
+                </Border>
+                <StackPanel x:Name="SettingsActions" Orientation="Horizontal" Spacing="12">
+                    <Button Click="SaveSettings_Click" x:Uid="SettingsAppBarButton23" AutomationProperties.AutomationId="SettingsAppBarButton23" Style="{StaticResource AccentButtonStyle}" />
+                    <Button Click="TestConnection_Click" x:Uid="SettingsAppBarButton24" AutomationProperties.AutomationId="SettingsAppBarButton24" />
+                    <Button Click="LoadProjects_Click" x:Uid="SettingsAppBarButton25" AutomationProperties.AutomationId="SettingsAppBarButton25" />
+                </StackPanel>
                 <InfoBar x:Name="SettingsInfoBar" IsOpen="False" IsClosable="False" />
                 <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" CornerRadius="12" Padding="24">
                     <Grid RowSpacing="12">
@@ -55,6 +69,12 @@
                         </ListView>
                     </Grid>
                 </Border>
+                <Expander x:Uid="LocalStorage" HorizontalAlignment="Stretch">
+                    <StackPanel Spacing="12">
+                        <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" x:Uid="SettingsTextBlock20" />
+                        <TextBox x:Name="SettingsPathBox" IsReadOnly="True" x:Uid="SettingsSettingsPathBox" AutomationProperties.AutomationId="SettingsSettingsPathBox" />
+                    </StackPanel>
+                </Expander>
             </StackPanel>
         </ScrollViewer>
     </Grid>

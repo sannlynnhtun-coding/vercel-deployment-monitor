@@ -74,7 +74,7 @@
     <value>Deployments</value>
   </data>
   <data name="DeployTextBlock34.Text" xml:space="preserve">
-    <value>Follow every build. Know when it ships.</value>
+    <value>Monitor recent builds and inspect deployment events.</value>
   </data>
   <data name="DeployStatusInfoBar.Title" xml:space="preserve">
     <value>Ready</value>
@@ -164,7 +164,7 @@
     <value>Settings</value>
   </data>
   <data name="SettingsTextBlock6.Text" xml:space="preserve">
-    <value>Connect your account and choose what to watch.</value>
+    <value>Connect to Vercel, choose your projects, and set how often to check.</value>
   </data>
   <data name="SettingsInfoBar7.Title" xml:space="preserve">
     <value>Stay in the loop</value>
@@ -173,7 +173,7 @@
     <value>Start monitoring from Deployments to receive Windows notifications when builds finish.</value>
   </data>
   <data name="SettingsTextBlock10.Text" xml:space="preserve">
-    <value>Vercel API</value>
+    <value>Connection</value>
   </data>
   <data name="SettingsTokenBox.Header" xml:space="preserve">
     <value>Vercel API token</value>
@@ -226,19 +226,19 @@
   <data name="SettingsSettingsPathBox.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
     <value>Settings file</value>
   </data>
-  <data name="SettingsAppBarButton23.Label" xml:space="preserve">
+  <data name="SettingsAppBarButton23.Content" xml:space="preserve">
     <value>Save settings</value>
   </data>
   <data name="SettingsAppBarButton23.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
     <value>Save settings</value>
   </data>
-  <data name="SettingsAppBarButton24.Label" xml:space="preserve">
+  <data name="SettingsAppBarButton24.Content" xml:space="preserve">
     <value>Test connection</value>
   </data>
   <data name="SettingsAppBarButton24.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
     <value>Test connection</value>
   </data>
-  <data name="SettingsAppBarButton25.Label" xml:space="preserve">
+  <data name="SettingsAppBarButton25.Content" xml:space="preserve">
     <value>Load projects</value>
   </data>
   <data name="SettingsAppBarButton25.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
@@ -258,5 +258,14 @@
   </data>
   <data name="ShellNavigationViewItem12.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
     <value>Deployments</value>
+  </data>
+  <data name="MonitoringHeading.Text" xml:space="preserve">
+    <value>Monitoring scope</value>
+  </data>
+  <data name="LocalStorage.Header" xml:space="preserve">
+    <value>Local storage</value>
+  </data>
+  <data name="LocalStorage.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Local storage</value>
   </data>
 </root>
